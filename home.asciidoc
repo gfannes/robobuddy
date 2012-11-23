@@ -1,3 +1,5 @@
 == Welcome to robobuddy
 
-link:meetings[Meetings]
+We have a link:meetings[meeting] every two weeks
+
+Some interesting link:links[Links]
