@@ -3,3 +3,5 @@
 We have a link:meetings[meeting] every two weeks
 
 Some interesting link:links[Links]
+
+We are a bunch of link:members[buddies]
