@@ -2,6 +2,8 @@
 
 Currently, we are a few link:members[colleagues] interested in robotics that want to do more than just dreaming about building robots. Time to wake-up and bite the apple...
 
+We will focus on a few hands-on link:projects[projects] to get started as soon as possible. Along the way, our software link:toolchain[toolchain] will be developed to make robotics as available as possible. The list of link:hardware[hardware] items contains the different parts we are currently working with.
+
 The plan is to have a link:meetings[meeting] every two weeks, trying to get an impressive amount of hard and software up-and-running.
 
 While doing so, interesting link:links[links] will be added
