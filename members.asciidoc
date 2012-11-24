@@ -1,5 +1,10 @@
 == Members
 
-=== Geert Fannes as Gfannes
-=== Alain Vermeren as RoboBuddie
-=== Koen Renier as Robobuddie
+Geert Fannes::
+    as gfannes
+
+Alain Vermeren::
+    as RoboBuddie
+
+Koen Renier::
+    as Robobuddy
