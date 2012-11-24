@@ -6,4 +6,4 @@ We will focus on a few hands-on link:projects[projects] to get started as soon a
 
 The plan is to have a link:meetings[meeting] every two weeks, trying to get an impressive amount of hard and software up-and-running.
 
-While doing so, interesting link:links[links] will be added
+While doing so, interesting link:links[links] will be added.
