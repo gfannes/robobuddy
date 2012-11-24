@@ -1,7 +1,7 @@
 == Welcome to robobuddy
 
-We have a link:meetings[meeting] every two weeks
+Currently, we are a few link:members[colleagues] interested in robotics that want to do more than just dreaming about building robots. Time to wake-up and bite the apple...
 
-Some interesting link:links[Links]
+The plan is to have a link:meetings[meeting] every two weeks, trying to get an impressive amount of hard and software up-and-running.
 
-We are a bunch of link:members[buddies]
+While doing so, interesting link:links[links] will be added

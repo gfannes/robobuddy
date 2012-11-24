@@ -2,5 +2,12 @@
 
 === 23/11/2012 Kick off RoboBuddies 
 
+The first RoboBuddies meeting, hosted as casa-Robobuddy, was a huge success! The coffee was nice, PC's were configured with https://github.com/github/gollum[gollum], http://www.methods.co.nz/asciidoc/index.html[asciidoc] and http://gcc.gnu.org[g++], and we took our first steps on a steep stairway towards success. Before focusing on one (or a few projects), we decided to go wild and collect link:goals[goals] as ambitious as can be. This will help us to make the right decisions with respect to hard and software requirements, hopefully limiting the surprises we will encounter on our journey.
 
+We even decided a few things already:
 
+* All progress will be reported on a static website, in English; Dutch would limit international visibility, our children will most probably not read the site anyway, they can follow progress directly. Currently, this site is hosted at http://www.fannes.com/robobuddy[fannes.com].
+* Linux will be our OS, the learning curve might be steep, but we are fearless
+* Open source is the way to go, everything can be found at https://github.com/gfannes/robobuddy[github]
+* We will make an inventory of all available machining hardware
+* Software will be based on an input-output filter system

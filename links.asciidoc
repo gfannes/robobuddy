@@ -1,0 +1,4 @@
+== Links
+
+=== Web shops
+* link:http://www.iprototype.be[iPrototype]: nice hardware shop providing http://www.arduino.cc[arduino] controllers, basic modules and robotic platforms
