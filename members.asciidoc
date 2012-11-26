@@ -1,7 +1,7 @@
 == Cast
 
 Geert Fannes::
-    as gfannes
+    as robobuggy
 
 Alain Vermeren::
     as RoboBuddie
