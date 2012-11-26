@@ -1,5 +1,5 @@
 #ifndef src_filter_filteroffset_h
-#define src_filter_filteroffset_
+#define src_filter_filteroffset_h
 
 
 template <typename T>
