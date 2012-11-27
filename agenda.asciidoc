@@ -1,0 +1,8 @@
+== Agenda
+
+Next meeting will be on 30/11/2012, casa robobuggy.
+
+* Decide on first link:projects[projects]
+* Create shopping list for link:hardware[hardware] items
+* Decide on wanted software dependencies
+* Install gubg
