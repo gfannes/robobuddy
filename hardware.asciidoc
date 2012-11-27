@@ -1,0 +1,6 @@
+== Hardware
+
+=== Electronics
+
+Arduino::
+    This is an http://www.arduino.cc[open source AVR-based microcontroller board] that excels due to its ability to precisely control things like motors, inputs, ..., and its library that eases programming
