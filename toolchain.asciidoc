@@ -9,7 +9,7 @@ The toolchain is the set of software tools that will be used to develop robotics
 
 === C++
 
-This is the language of the future, especially when it comes to kicking the most juice out of a CPU. The latest http://en.wikipedia.org/wiki/C++11[C++11 standard] is currently supported very well by the latest http://gcc.gnu.org[g++] compiler, which can even be used to program an 8-bit Arduino.
+This is the language of the future, especially when it comes to kicking the most juice out of a CPU. The latest http://en.wikipedia.org/wiki/C%2B%2B11[C++11 standard] is currently supported very well by the latest http://gcc.gnu.org[g++] compiler, which can even be used to program an 8-bit Arduino.
 
 === Asciidoc
 
