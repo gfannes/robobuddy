@@ -2,5 +2,14 @@
 
 === Electronics
 
-Arduino::
-    This is an http://www.arduino.cc[open source AVR-based microcontroller board] that excels due to its ability to precisely control things like motors, inputs, ..., and its library that eases programming
+==== Arduino
+
+This is an http://www.arduino.cc[open source AVR-based microcontroller board] that excels due to its ability to precisely control things like motors, inputs, ..., and its library that eases programming. Arduino comes in different versions, ranging from 8 to 32 bit, 16Mhz to 81Mhz, supporting as many as 54 digital IO pins of which 12 can be used as link:pwm[PWM]. An Arduino runs only one program (from its internal flash), so this has complete control over it.
+
+A power source is the only thing needed to run it, and it even output a stabilized 5V/3.3V that can e.g., be used directly to power a few LEDs.
+
+There exist a lot of _shields_, which are basically prints that can be stacked on an Arduino to extend it with some specific piece of hardware.
+
+==== Raspberry PI
+
+A http://www.raspberrypi.org[Raspberry PI] is a cheap but full fledged Linux-able ARM-based computer. It has a few basic IO pins and even a link:pwm[PWM] pin, and is has a serial port that can be used for interfacing with e.g., an Arduino.
