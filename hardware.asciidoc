@@ -13,3 +13,7 @@ There exist a lot of _shields_, which are basically prints that can be stacked o
 ==== Raspberry PI
 
 A http://www.raspberrypi.org[Raspberry PI] is a cheap but full fledged Linux-able ARM-based computer. It has a few basic IO pins and even a link:pwm[PWM] pin, and is has a serial port that can be used for interfacing with e.g., an Arduino.
+
+==== H-bridge
+
+This is a H-shaped formation of 4 transistors that interface a DC brushed motor with a link:pwm[PWM] source.
