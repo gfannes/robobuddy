@@ -1,0 +1,7 @@
+== Toolchain
+
+The toolchain is the set of software tools that will be used to develop robotics software that run on the different platforms (Arduino, Raspberry PI, PC, ...)
+
+=== Overal design goals
+
+* Easy to setup, even by less experienced programmers
