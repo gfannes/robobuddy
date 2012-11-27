@@ -1,0 +1,5 @@
+== Pulse width modulation
+
+This is a technique to produce a varying voltage level using a digital output pin. The pin itself is _not_ capable to produce a continuous spectrum of voltage levels, it can only be turned _on_, or _off_ (e.g., 0V-5V for an Arduino output pin). But by switching this pin on and off very fast, certain electrical equipment will interpret this as a vaying voltage level, where the voltage level can be precisely controller by controlling the relative amount of time the pin is switched on during an on/off cycle.
+
+This technique is typically used to control a DC brushed motor. The PWM source itself is not connected to the motor directly, but an H-bridge should be used to translate the PWM source into something that can deliver enough power.
