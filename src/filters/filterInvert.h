@@ -1,14 +1,17 @@
 #ifndef src_filter_filterinvert_h
 #define src_filter_filterinvert_h
 
-template <typename T>
-class FilterInvert
+namespace filter
 {
-public:
-	const T operator ()(const T& input)const
-	{
-		return - input;
-	}
-};
+    template <typename T>
+        class Invert
+        {
+            public:
+                const T operator ()(const T& input)const
+                {
+                    return - input;
+                }
+        };
+}
 
 #endif

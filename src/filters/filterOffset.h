@@ -2,18 +2,21 @@
 #define src_filter_filteroffset_h
 
 
-template <typename T>
-class FilterOffset
+namespace filter
 {
-public:
-	FilterOffset(const T& offset):offset_(offset){}
-	const T operator ()(const T& input)const
-	{
-		return offset_ + input; 
-	}
-	
-private:
-	const T offset_;
-};
+    template <typename T>
+        class Offset
+        {
+            public:
+                Offset(const T& offset):offset_(offset){}
+                const T operator ()(const T& input)const
+                {
+                    return offset_ + input; 
+                }
+
+            private:
+                const T offset_;
+        };
+}
 
 #endif

@@ -1,25 +1,24 @@
-#include "filterMinMax.h"
-#include "filterInvert.h"
-#include "filterOffset.h"
+#include "filter/MinMax.h"
+#include "filter/Invert.h"
+#include "filter/Offset.h"
 #include <iostream>
-
-
+using namespace filter;
 using namespace std;
 
 int main(int argc, const char* argv[])
 { 
 	cout << "--- MinMax Filter ---" << endl;
-	FilterMinMax<int> mm(-20, 20);
+	MinMax<int> mm(-20, 20);
 	for(int i = -30; i <= 30; i += 5)
 		cout << i << " -> " << mm(i) << endl;
 		
 	cout << "--- Invert Filter ---" << endl;
-	FilterInvert<int> inv;
+	Invert<int> inv;
 	for(int i = -30; i <= 30; i += 5)
 		cout << i << " -> " << inv(i) << endl;
 
 	cout << "--- Offset Filter ---" << endl;
-	FilterOffset<int> off(30);
+	Offset<int> off(30);
 	for(int i = -30; i <= 30; i += 5)
 		cout << i << " -> " << off(i) << endl;
 
