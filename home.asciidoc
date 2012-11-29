@@ -1,9 +1,13 @@
 == Welcome to robobuddy
 
+_To boldly go where no robot has roamed before_
+
 Currently, we are a few link:members[colleagues] interested in robotics that want to do more than just dreaming about building robots. Time to wake-up and bite the apple...
 
-We will focus on a few hands-on link:projects[projects] to get started as soon as possible. Along the way, our software link:toolchain[toolchain] will be developed to make robotics as available as possible. The list of link:hardware[hardware] items contains the different parts we are currently working with.
+We will focus on a few hands-on link:projects[projects] to get started as soon as possible. Along the way, our software link:toolchain[toolchain] will be developed to make robotics as available as possible. We would like to endup with a modular robotics concept, both for hardware and software, ranging from basic robot control to more advanced AI and computer vision. But beware, we do it all in the name of _fun_.
 
-The plan is to have a link:meetings[meeting] every two weeks, trying to get an impressive amount of hard and software up-and-running. While doing so, interesting link:links[links] will be added.
+The plan is to have a link:meetings[meeting] every two weeks or so, trying to get an impressive amount of hard and software up-and-running. While doing so, interesting link:links[links] will be added.
 
 Here is the link:agenda[agenda] for the next meeting, please complete if necessary.
+
+The list of link:hardware[hardware] items contains the different parts we are currently working with. You can also take a look at our link:library[library] if you want to know what books we are using as pressure weights when we have to glue things together.
