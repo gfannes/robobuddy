@@ -1,0 +1,41 @@
+== Library
+
+These are the books we currently have access to:
+
+=== Robotics
+
+=== Artificial intelligence
+
+On Intelligence::
+    Superb book that provides a nice theory on how the neocortex works. Very accessible, even without a mathematical background.
+
+Bio-Inspired Artificial Intelligence::
+    Great book that goes deeper into evolutionary systems, cellular systems, neural systems etc., algorithms all used by nature
+
+OpenCV::
+    A book on the http://opencv.willowgarage.com/wiki/[Open Computer Vision] SDK
+
+=== Programming
+
+The Algorithm Design Manual::
+    If you know the word _algorithm_, you should take a look at this book.
+
+Introduction to Algorithms::
+    Rigorous book on computer algorithms
+
+Hacker's Delight:
+    Bits and bytes tricks into the extreme, but is does have a nice cover
+
+The Boost Graph Library::
+    Explains the setup of the http://www.boost.org/doc/libs/1_52_0/libs/graph/doc/index.html[Boost Graph Library] in combination with some template metaprogramming that was used to develop the BGL
+
+=== Mathematics
+
+Probability Theory, The logic of science::
+    This book builds probability theory itself from the ground up
+
+Concrete Mathematics, a foundation for computer science::
+    Contains things like sums, number theory, generating functions and discrete probability
+
+Neural Networks, a comprehensive foundation::
+    A bible when it comes to neural networks
