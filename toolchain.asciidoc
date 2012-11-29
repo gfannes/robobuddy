@@ -14,3 +14,7 @@ This is the language of the future, especially when it comes to kicking the most
 === Asciidoc
 
 http://www.methods.co.nz/asciidoc/[Asciidoc] is the markup language that we use to document all our experiments. https://github.com/github/gollum[Gollum] is used to create the pages in a http://git-scm.com/[git] respository, and these pages are also converted into a static website using an in-house developed http://ruby-lang.org[ruby] script that uses the _asciidoc_ program to convert these pages into HTML. So, asciidoc is not only a markup language, but also comes with a toolchain to manipulate and convert these documents.
+
+=== GUBG
+
+http://www.fannes.com.gubg[GUBG] are the Generic Utilities By GUBG, an extremely useful set of mainly C++ code that are designed to ease the life of the poor programmer.
