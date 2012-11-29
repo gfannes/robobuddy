@@ -17,4 +17,4 @@ http://www.methods.co.nz/asciidoc/[Asciidoc] is the markup language that we use 
 
 === GUBG
 
-http://www.fannes.com.gubg[GUBG] are the Generic Utilities By GUBG, an extremely useful set of mainly C++ code that are designed to ease the life of the poor programmer.
+http://www.fannes.com/gubg[GUBG] are the Generic Utilities By GUBG, an extremely useful set of mainly C++ code that are designed to ease the life of the poor programmer.
