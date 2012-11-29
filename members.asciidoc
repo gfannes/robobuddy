@@ -1,10 +1,13 @@
 == Cast
 
 Geert Fannes::
-    as robobuggy
+    as robobuggy, who is specialized in typing words like _template_ and _typename_
 
 Alain Vermeren::
     as RoboBuddie
 
 Koen Renier::
     as Robobuddy
+
+Lander Fannes::
+    as lfannes
