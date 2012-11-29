@@ -14,6 +14,21 @@ This project has already following stages completed:
 * Integration of the webcam, arduino, Raspberry PI and lipo via makerbeams is done
 
 Todo:
+
 * Integration of H-bridge and wiring
 * Programming of the control center
 * Winning the award!
+
+=== RAMIT
+
+RAMIT is planned to be a Robust robot built from AutoMotive Industry parts, with a Tank-like design. The basic idea started already a few years ago, the following design is envisioned:
+
+* Windscreen wiper motors to drive the tank treads. These motors are cheap, run on 12V DC, are robust and come with reduction box installed. On the down-side, these motors are probably not very efficient.
+* Bicycle or motorcycle chains as treads. These are basically for free, can be easily adjusted, and cog-wheels exists in all sizes
+* Motorcycle 12V battery, or a sealed lead-acid battery for power
+* Body chasis welded together from pipes
+
+Todo:
+
+* Build body chasis, and mount the motors
+* Find a suitable H-bridge
