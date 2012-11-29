@@ -9,3 +9,7 @@ push: pull commit
 upload: push
 	r smeagol
 	cd smeagol && scp *.html web-gfannes@fannes.com:fannes.com/www/robobuddy
+webserver: pull
+	gollum --config config.rb
+	git pull
+	git push
