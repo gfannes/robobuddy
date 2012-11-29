@@ -10,3 +10,4 @@ Next meeting will be on 30/11/2012, casa robobuggy.
    * Power, serial communication, ...
    * Small, strong connectors, failsafe, easy to use with prototype prints
 * Decide on the basic menu structure for the website, experiment with _asciidoc_ to include this
+* Changing the way gollum is started etc., using a central Makefile
