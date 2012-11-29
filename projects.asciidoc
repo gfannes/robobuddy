@@ -5,6 +5,7 @@
 This project was already started by robobuggy and lfannes before robobuddy was born; the overall goal is to produce a wifi-enabled robot that can be controlled from a PC. It should be able to control the robot without direct visual contact, e.g., via a webcam with images streamed to the PC. If SuperRobot can be steered from our home office into the playhouse in our garden, the project is accomplished, and we will be rewarded with a new robot platform, namely the link:hardware[Wild Thumper].
 
 This project has already following stages completed:
+
 * Selection of robot kit: link:hardware[Rover5]
 * Powering the robot via a lipo and controlling the motors via an H-bridge with an arduino
 * Controlling the arduino via a serial USB connection from a fixed PC and/or Raspberry PI using the link:d9 protocol
