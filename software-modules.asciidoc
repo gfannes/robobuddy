@@ -1,0 +1,11 @@
+== Software modules
+
+=== Brain config
+
+Graphical UI that allows to connect various filters with inputs and outputs to define the behaviour of the robot.
+
+=== Control center
+
+Graphical UI to remote control a robot, optionally with visual feedback from a webcam
+
+=== 
