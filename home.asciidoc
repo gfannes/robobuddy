@@ -1,12 +1,10 @@
+== Welcome to robobuddy
+
    i_i
   [0 0]
  /|___|\
    | |
- robobuddy
-
-== Welcome to robobuddy
-
-_To boldly go where no robot has roamed before_
+ robobuddy... to boldly go where no robot has roamed before
 
 Currently, we are a few link:members[colleagues] interested in robotics that want to do more than just dreaming about building robots. Time to wake-up and bite the apple...
 
