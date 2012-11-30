@@ -20,6 +20,9 @@ OpenCV::
 The Algorithm Design Manual::
     If you know the word _algorithm_, you should take a look at this book.
 
+The Linux Programming Interface::
+    The bible when it comes to programming against a linux OS
+
 Introduction to Algorithms::
     Rigorous book on computer algorithms
 
