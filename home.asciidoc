@@ -1,3 +1,9 @@
+++  i_i    ++
+++ [0 0]   ++
+++/|___|\  ++
+++  | |    ++
+++robobuddy++
+
 == Welcome to robobuddy
 
 _To boldly go where no robot has roamed before_
