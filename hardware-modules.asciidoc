@@ -1,0 +1,5 @@
+== Hardware modules
+
+=== Mouse-based motor encoder
+
+Try to get motor feedback (actually wheel-feedback) by placing the internals of a mouse on a wheel. this might be physically placing an ancient PS2 mouse encoder on the wheel, or using a laser or dark-field mouse module to monitor wheel movement.
