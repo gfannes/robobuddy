@@ -4,7 +4,7 @@ _To boldly go where no robot has roamed before_
 
 Currently, we are a few link:members[colleagues] interested in robotics that want to do more than just dreaming about building robots. Time to wake-up and bite the apple...
 
-We will focus on a few hands-on link:projects[projects] to get started as soon as possible to be able to achieve our link:goals[over-the-top goals] in the long run. Along the way, our software link:toolchain[toolchain] will be developed to make robotics as available as possible. We would like to end up with a modular robotics concept, both for link:hardware_modules[hardware] and link:software_modules[software], ranging from basic robot control to more advanced AI and computer vision. But beware, we do it all in the name of _fun_.
+We will focus on a few hands-on link:projects[projects] to get started as soon as possible to be able to achieve our link:goals[over-the-top goals] in the long run. Along the way, our software link:toolchain[toolchain] will be developed to make robotics as available as possible. We would like to end up with a modular robotics concept, both for link:hardware-modules[hardware] and link:software-modules[software], ranging from basic robot control to more advanced AI and computer vision. But beware, we do it all in the name of _fun_.
 
 The plan is to have a link:meetings[meeting] every two weeks or so, trying to get an impressive amount of hard and software up-and-running. While doing so, interesting link:links[links] will be added.
 
