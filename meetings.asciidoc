@@ -1,6 +1,10 @@
 == Meetings
 
-=== 23/11/2012 Kick off RoboBuddies 
+=== 30/11/2012 Getting dirty
+
+image:pics/meeting-20121130/motor-driver.png[Motor with driver]
+
+=== 23/11/2012 Kick off Robobuddies 
 
 The first RoboBuddies meeting, hosted as casa-Robobuddy, was a huge success! The coffee was nice, PC's were configured with https://github.com/github/gollum[gollum], http://www.methods.co.nz/asciidoc/index.html[asciidoc] and http://gcc.gnu.org[g++], and we took our first steps on a steep stairway towards success. Before focusing on one (or a few projects), we decided to go wild and collect link:goals[goals] as ambitious as can be. This will help us to make the right decisions with respect to hard and software requirements, hopefully limiting the surprises we will encounter on our journey.
 
