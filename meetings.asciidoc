@@ -2,7 +2,7 @@
 
 === 30/11/2012 Getting dirty
 
-image:/m.png[Motor with driver]
+image::m.png[Motor with driver]
 
 === 23/11/2012 Kick off Robobuddies 
 
