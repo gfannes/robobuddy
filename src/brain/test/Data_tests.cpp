@@ -25,5 +25,6 @@ int main()
         d = 123;
     for (const auto d: data.container<int>())
         L(d);
+
     return 0;
 }
