@@ -27,6 +27,7 @@ namespace brain
                     receiver_().brain_beforeUpdate();
                     Data &cd = current();
                     receiver_().brain_update(cd.template begin<double>(), cd.template end<double>());
+                    //Still need to integrate some MultiCaller that goes over all Data types
                     //receiver_().brain_update(cd.template begin<int>(), cd.template end<int>());
                     receiver_().brain_afterUpdate();
                 }
