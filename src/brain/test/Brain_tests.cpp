@@ -156,9 +156,9 @@ namespace
 
             Brain():
                 setPoint_(4.242),
-                process_(1.0, 1.0, 9.81),
+                process_(1.0, 0.0001, 9.81),
                 processValue_(process_),
-                sum_({{0.5, 1.0, 1.0}}),
+                sum_({{1.0, 1.0, 1.0}}),
                 manipulatedValue_(process_){}
 
             double pv() const {return process_.x();}
