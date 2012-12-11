@@ -2,6 +2,7 @@
 #define rb_brain_Brain_hpp
 
 #include "brain/Codes.hpp"
+#include <chrono>
 
 namespace brain
 {
