@@ -7,24 +7,43 @@
 
 namespace brain
 {
-    template <typename T>
-        struct List
+    template <typename Container>
+        struct Array
         {
-            typedef typename T::value_type value_type;
-            value_type &get(size_t ix, value_type *){return list_[ix];}
-            T list_;
+            typedef typename Container::value_type value_type;
+            value_type &get_(size_t ix, value_type *){return array_[ix];}
+            Container &container_(value_type *){return array_;}
+            Container array_;
         };
-    template <typename... Ts>
+
+    template <template <typename TT> class Traits, typename... Ts>
         struct Data{};
-    template <typename T, typename... Ts>
-        struct Data<T, Ts...>: List<T>, Data<Ts...>
+    template <template <typename TT> class Traits, typename T, typename... Ts>
+        struct Data<Traits, T, Ts...>: Array<typename Traits<T>::Container>, Data<Traits, Ts...>
         {
-            typedef List<T> ListT;
-            typedef Data<Ts...> Rest;
+            typedef typename Traits<T>::Container Container;
+            typedef Array<Container> Array_;
+            typedef Data<Traits, Ts...> Rest;
             template <typename TT>
-                TT &get(size_t ix, TT *tt)
+                TT &get_(size_t ix, TT *tt)
                 {
-                    return gubg::tmp::If<gubg::tmp::Equal<TT, typename T::value_type>::Value, ListT, Rest>::Type::get(ix, tt);
+                    return gubg::tmp::If<gubg::tmp::Equal<TT, T>::Value, Array_, Rest>::Type::get_(ix, tt);
+                }
+            template <typename TT>
+                TT &get(size_t ix)
+                {
+                    return get_(ix, (TT*)(0));
+                }
+
+            template <typename TT>
+                typename Traits<TT>::Container &container_(TT *tt)
+                {
+                    return gubg::tmp::If<gubg::tmp::Equal<TT, T>::Value, Array_, Rest>::Type::container_(tt);
+                }
+            template <typename TT>
+                typename Traits<TT>::Container &container()
+                {
+                    return container_((TT*)(0));
                 }
         };
 }
