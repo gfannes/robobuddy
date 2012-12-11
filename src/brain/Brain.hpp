@@ -6,17 +6,35 @@
 
 namespace brain
 {
-    template <typename Receiver, typename TimePoint>
+    template <typename Receiver, typename Data, typename TimePoint>
         class Brain_crtp
         {
             public:
                 typedef typename TimePoint::duration duration;
-                void process(duration dT)
+
+                Brain_crtp():
+                    currentIsFirst_(true){}
+
+                void update(duration dT)
                 {
+                    if (now_ == start_)
+                        receiver_().brain_initialize();
+
                     dT_ = dT;
                     now_ += dT_;
-                    receiver_().brain_processAll();
+                    swap();
+
+                    receiver_().brain_beforeUpdate();
+                    Data &cd = current();
+                    receiver_().brain_update(cd.template begin<double>(), cd.template end<double>());
+                    //receiver_().brain_update(cd.template begin<int>(), cd.template end<int>());
+                    receiver_().brain_afterUpdate();
                 }
+
+                //Access to current and previous data, and swapping them
+                Data &current(){return (currentIsFirst_ ? datas_[0] : datas_[1]);}
+                Data &previous(){return (currentIsFirst_ ? datas_[1] : datas_[0]);}
+                void swap(){currentIsFirst_ = !currentIsFirst_;}
 
                 duration dT() const {return dT_;}
                 double dT_double() const
@@ -37,6 +55,9 @@ namespace brain
                 TimePoint now_;
                 duration dT_;
                 Receiver &receiver_(){return static_cast<Receiver&>(*this);}
+
+                Data datas_[2];
+                bool currentIsFirst_;
         };
 }
 

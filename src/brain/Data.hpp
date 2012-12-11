@@ -31,6 +31,10 @@ namespace brain
                     typename Traits<TT>::Container &container() { return container_((TT*)(0)); }
                 template <typename TT>
                     TT &get(size_t ix) {return container<TT>()[ix];}
+                template <typename TT>
+                    typename Traits<TT>::Container::iterator begin() {return container<TT>().begin();}
+                template <typename TT>
+                    typename Traits<TT>::Container::iterator end() {return container<TT>().end();}
 
             protected:
                 template <typename TT>
