@@ -18,7 +18,12 @@ namespace brain
         };
 
     template <template <typename TT> class Traits, typename... Ts>
-        class Data{};
+        class Data
+        {
+            public:
+                template <typename Callback>
+                    void eachContainer(Callback &callback) { }
+        };
     template <template <typename TT> class Traits, typename T, typename... Ts>
         class Data<Traits, T, Ts...>: Array<typename Traits<T>::Container>, Data<Traits, Ts...>
         {
@@ -27,14 +32,24 @@ namespace brain
                 typedef Array<Container> Array_;
                 typedef Data<Traits, Ts...> Rest;
 
+                //Returns a specific data array
                 template <typename TT>
                     typename Traits<TT>::Container &container() { return container_((TT*)(0)); }
+                //Returns a specific element in a data array, no bounds checking performed
                 template <typename TT>
-                    TT &get(size_t ix) {return container<TT>()[ix];}
-                template <typename TT>
-                    typename Traits<TT>::Container::iterator begin() {return container<TT>().begin();}
-                template <typename TT>
-                    typename Traits<TT>::Container::iterator end() {return container<TT>().end();}
+                    TT &get(size_t ix)
+                    {
+                        assert(ix < container<TT>().size());
+                        return container<TT>()[ix];
+                    }
+
+                //Calls callback.operator()() for the different data arrays
+                template <typename Callback>
+                    void eachContainer(Callback &callback)
+                    {
+                        callback(Array_::array_);
+                        Rest::eachContainer(callback);
+                    }
 
             protected:
                 template <typename TT>

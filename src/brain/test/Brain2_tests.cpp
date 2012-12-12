@@ -10,11 +10,12 @@ using namespace test;
 
 namespace 
 {
-    enum Pin {SetPoint, ProcessValue, P, I, D, ManipulatedValue, Nr_};
+    enum Pin {Start_ = -1, SetPoint, ProcessValue, P, I, D, ManipulatedValue, Nr_};
 
     template <typename T> struct Traits;
     template <> struct Traits<double>{typedef std::array<double, Pin::Nr_> Container;};
-    typedef brain::Data<Traits, double> Data;
+    template <> struct Traits<int>{typedef std::array<int, 3> Container;};
+    typedef brain::Data<Traits, double, int> Data;
 
     class Brain: public brain::Brain_crtp<Brain, Data, chrono::high_resolution_clock::time_point>
     {
@@ -29,30 +30,44 @@ namespace
             }
             void brain_beforeUpdate()
             {
-                    springRocket_.process(dT_double());
+                springRocket_.process(dT_double());
+                pin_ = Start_;
             }
             void brain_afterUpdate()
             {
-                    springRocket_.setThrust(current().get<double>(ManipulatedValue));
-                    L(current().get<double>(ProcessValue));
+                assert(pin_ == Nr_-1);
+                springRocket_.setThrust(current().get<double>(ManipulatedValue));
+                L(current().get<double>(ProcessValue));
             }
-            template <typename It>
-                void brain_update(It it, It end)
-                {
-                    set_(SetPoint,         it, 4.242);
-                    set_(ProcessValue,     it, springRocket_.x());
-                    set_(P,                it, current().get<double>(SetPoint) - current().get<double>(ProcessValue));
-                    set_(I,                it, previous().get<double>(I) + dT_double()*current().get<double>(P));
-                    set_(D,                it, (current().get<double>(P) - previous().get<double>(P))/dT_double());
-                    set_(ManipulatedValue, it, current().get<double>(P) + current().get<double>(I) + current().get<double>(D));
-                    assert(it == end);
-                }
+            typedef Traits<double>::Container::iterator It_double;
+            void brain_update(It_double it, It_double end)
+            {
+                //L("Updating doubles");
+                set_(SetPoint,         it, 4.242);
+                set_(ProcessValue,     it, springRocket_.x());
+                set_(P,                it, current().get<double>(SetPoint) - current().get<double>(ProcessValue));
+                set_(I,                it, previous().get<double>(I) + dT_double()*current().get<double>(P));
+                set_(D,                it, (current().get<double>(P) - previous().get<double>(P))/dT_double());
+                set_(ManipulatedValue, it, current().get<double>(P) + current().get<double>(I) + current().get<double>(D));
+                assert(it == end);
+            }
+            typedef Traits<int>::Container::iterator It_int;
+            void brain_update(It_int it, It_int end)
+            {
+                //L("Updating ints");
+            }
 
         private:
             SpringRocket &springRocket_;
+            Pin pin_;
+
+            //Helper function that will set the value of it and proceed it
             template <typename It>
                 void set_(Pin pin, It &it, double v)
                 {
+                    pin_ = (Pin)(pin_ + 1);
+                    //We check that we are setting the pins in the expected order
+                    assert(pin_ == pin);
                     //L("Setting pin " << pin << " it to " << v);
                     *it++ = v;
                 }
