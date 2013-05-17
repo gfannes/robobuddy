@@ -1,0 +1,19 @@
+Infrared Distance Sensor Type E18-D80NK
+
+This is an Infrared Transmitter and receiver which together make up a photoelectric sensor. The sensor has a long detection distance, and has less interference by visible light because it uses modulated Infrared light. This sensor has a screwdriver adjustment to set the detected distance, then gives a digital output when it senses something within that range. This sensor does not return a distance VALUE. See the photo on right: Connections are:
+
+    RED: +5 VDC
+    GREEN: Ground
+    YELLOW: Output: Open Collector Pulldown: Use 10K Pullup resistor to +5V
+
+
+    Power Supply: 5VDC
+    supply current DC <25mA
+    maximum load current 100mA (Open-collector NPN pulldown output)
+    response time <2ms
+    Diameter: 17MM
+    pointing angle: ≤ 15 °, effective from 3-80CM Adjustable
+    detection of objects: transparent or opaque
+    working environment temperature: -25℃+55℃
+    Case Material: Plastic
+    Lead Length: 45CM
